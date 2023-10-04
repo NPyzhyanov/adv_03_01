@@ -15,14 +15,12 @@ smart_array::smart_array(int size_)
     filled_elements_amount = 0;
     
     address = new int[size];
-    std::cout << "ctor: address = " << address << std::endl;
 }
 
 smart_array::~smart_array()
 {
     delete[] address;
     address = nullptr;
-    std::cout << "dtor: address = " << address << std::endl;
 }
 
 void smart_array::add_element(int value)
